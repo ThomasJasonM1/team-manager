@@ -1,0 +1,24 @@
+{
+  "name": "team-manager",
+  "version": "1.0.0",
+  "description": "This project will allow a user to enter employee information and generate custom cards based on user input",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasJasonM1/team-manager.git"
+  },
+  "author": "Jason Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThomasJasonM1/team-manager/issues"
+  },
+  "homepage": "https://github.com/ThomasJasonM1/team-manager#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "inquirer": "^7.0.4"
+  }
+}
