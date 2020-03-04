@@ -1,25 +1,21 @@
-const axios = require('axios');
+//const axios = require('axios');
 const Employee = require('../employee');
-require('dotenv').config();
 
-console.log(JSON.stringify(Employee));
-
-class Engineer extends Employee {
+module.exports = class Engineer extends Employee {
     constructor(gitHubUsername = '', name, email, id) {
         super(name, id, email);
         this.gitHubUsername = gitHubUsername;
     }
 
     getGithub() {
-        console.log(process.env.ACCESS_TOKEN);
-        axios.get(`https://api.github.com/users/${this.gitHubUsername}?access_token=${process.env.ACCESS_TOKEN}`)
-        .then(resp => {
-            console.log(this);
-            console.log(resp.data);
-        });
+        return this.gitHubUsername;
+        // axios.get(`https://api.github.com/users/${this.gitHubUsername}?access_token=e8199b4a74074eb2c412315a36a60e1ae14f1d48`)
+        // .then(resp => {
+        //     console.log(resp.data);
+        // });
+    }
+
+    getRole() {
+        return 'Engineer';
     }
 }
-
-let eng = new Engineer('thomasjasonm1', 'jason', 'thomas@gmail.com', 2);
-
-eng.getGithub();
