@@ -12,7 +12,8 @@
     "url": "git+https://github.com/ThomasJasonM1/team-manager.git"
   },
   "scripts": {
-    "test": "jest --verbose test/*"
+    "test": "jest --verbose test/*",
+    "start": "node index.js"
   },
   "author": "Jason Thomas",
   "license": "ISC",
