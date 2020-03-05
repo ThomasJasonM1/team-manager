@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "This project will allow a user to enter employee information and generate custom cards based on user input",
   "main": "index.js",
-  "scripts": {
-    "test": "npm test"
+  "directories": {
+    "lib": "classes",
+    "test": "test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ThomasJasonM1/team-manager.git"
+  },
+  "scripts": {
+    "test": "jest --verbose test/*"
   },
   "author": "Jason Thomas",
   "license": "ISC",
@@ -17,8 +21,7 @@
   },
   "homepage": "https://github.com/ThomasJasonM1/team-manager#readme",
   "dependencies": {
-    "axios": "^0.19.2",
-    "dotenv": "^8.2.0",
-    "inquirer": "^7.0.4"
+    "inquirer": "^7.0.6",
+    "jest": "^25.1.0"
   }
 }
