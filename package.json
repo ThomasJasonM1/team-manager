@@ -23,6 +23,6 @@
   "homepage": "https://github.com/ThomasJasonM1/team-manager#readme",
   "dependencies": {
     "inquirer": "^7.0.6",
-    "jest": "^25.1.0"
+    "jest": "^29.6.1"
   }
 }
